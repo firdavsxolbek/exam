@@ -1,0 +1,90 @@
+.main_header__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    align-items: center;
+}
+
+.header_logo {
+    width: 135px;
+    height: 38px;
+    flex-shrink: 0;
+}
+
+.header_logo__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_header__list {
+    display: flex;
+}
+
+.main_header__nav {
+    margin-left: 64px;
+}
+
+.main_header__item:not(:first-child) {
+    margin-left: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.main_header__link {
+    color: #36536B;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.699999988079071;
+    padding-left: 40px;
+}
+
+.link1 {
+    padding-left: 60px;
+}
+
+.main_header__btn {
+    color: #FBFCFE;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.115px;
+    width: 173px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #BA4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    padding: 14px 25px;
+}
+
+.main_header__menu {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/hero_burger.svg);
+    border: none;
+    display: none;
+
+}
+
+@media screen and (max-width:771px) {
+    .main_header__btn {
+    margin-right: 38px;    
+    }
+}
+
+@media screen and (max-width:771px) {
+
+    .main_header__btn,
+    .main_header__nav {
+        display: none;
+    }
+
+    .main_header__menu {
+        display: block;
+    }
+}

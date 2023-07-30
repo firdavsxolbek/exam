@@ -1,0 +1,52 @@
+.work{
+    background: #1B262F;
+     background-image: url(../../img/hero_back.svg);
+     background-repeat: no-repeat;
+     background-position: left top;
+}
+.work_container{
+    display: flex;
+    justify-content: space-between;
+}
+.work__title{
+    padding-top: 100px;
+    color: #FBFCFE;
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -0.369px;
+    width: 445px;
+}
+.work__text{
+    color: #FBFCFE;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 186.667% */
+    width: 445px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+.work__logos{
+    padding-top: 190px;
+}
+.work__btn{
+    color: #FBFCFE;
+text-align: center;
+font-family: Public Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.115px;
+border-radius: 24px;
+border: 1px solid #FBFCFE;
+width: 129px;
+height: 48px;
+flex-shrink: 0;
+padding: 16px 32px;
+mb100
+}
