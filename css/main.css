@@ -54,12 +54,13 @@ body {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 45px;
 }
 
 .main_header__container {
   display: flex;
   justify-content: space-between;
+  padding-top: 45px;
+  align-items: center;
 }
 
 .header_logo {
@@ -70,13 +71,20 @@ body {
 
 .header_logo__block {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main_header__list {
   display: flex;
 }
 
-.main_header__item {
+.main_header__nav {
+  margin-left: 64px;
+}
+
+.main_header__item:not(:first-child) {
+  margin-left: 40px;
   text-align: center;
   align-items: center;
 }
@@ -88,7 +96,6 @@ body {
   font-weight: 700;
   opacity: 0.6999999881;
   padding-left: 40px;
-  padding-top: 10px;
 }
 
 .link1 {
@@ -121,9 +128,20 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .main_header__btn {
-    margin-right: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 771px) {
+  .main_header__btn,
+  .main_header__nav {
+    display: none;
+  }
+  .main_header__menu {
+    display: block;
   }
 }
 .hero_container {
@@ -135,6 +153,10 @@ body {
   padding-top: 132px;
 }
 
+.hero_input__block {
+  display: flex;
+}
+
 .hero__title {
   color: #36536B;
   font-family: DM Serif Display;
@@ -144,7 +166,7 @@ body {
   line-height: 72px;
   /* 100% */
   letter-spacing: -0.554px;
-  width: 546px;
+  max-width: 546px;
   height: 243px;
   padding-bottom: 21px;
 }
@@ -157,6 +179,12 @@ body {
   padding-top: 16px;
 }
 
+.hero {
+  background-image: url(../../img/hero_back.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 .hero__img {
   width: 463px;
   padding-left: 100px;
@@ -167,7 +195,7 @@ body {
 }
 
 .hero__input {
-  width: 445px;
+  max-width: 445px;
   height: 48px;
   flex-shrink: 0;
   border-radius: 24px;
@@ -175,8 +203,17 @@ body {
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
 }
 
+@media screen and (max-width: 1000px) {
+  .hero_container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .work {
   background: #1B262F;
+  background-image: url(../../img/hero_back.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .work_container {

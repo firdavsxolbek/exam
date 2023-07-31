@@ -71,9 +71,11 @@
 
 }
 
-@media screen and (max-width:771px) {
+@media screen and (max-width:1000px) {
     .main_header__btn {
-    margin-right: 38px;    
+   margin-left: auto;
+   margin-right: auto;  
+    position: absolute;  
     }
 }
 
