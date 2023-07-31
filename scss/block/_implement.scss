@@ -2,11 +2,11 @@
     display: flex;
 
 }
-.implement{
-    background-image: url(../../img/hero_back.svg);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-}
+// .implement{
+//     background-image: url(../../img/hero_back.svg);
+//     background-repeat: no-repeat;
+//     background-position: right bottom;
+// }
 
 .implement__title {
     color: #36536B;
@@ -63,13 +63,13 @@
 }
 .sample__text{
     color: #6C8294;
-font-family: Public Sans;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; /* 186.667% */
-width: 445px;
-padding-top: 24px;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 186.667% */
+    width: 445px;
+    padding-top: 24px;
 }
 .img1{
     width: 263px;
@@ -83,4 +83,57 @@ flex-shrink: 0;
 }
 .sample__imgs{
     display: flex;
+}
+@media screen and (max-width:1050px){
+    .implement_container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .implement__box_1{
+        padding-top: 20px;
+        align-items: center;
+    }
+    .implement__title{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .implement__text{
+        color: #6C8294;
+        text-align: center;
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 186.667% */
+        width: 573px;
+    }
+    .sample_container{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width:600px){
+
+    .implement__text{
+        color: #6C8294;
+        text-align: center;
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 186.667% */
+        width: 573px;
+        align-items: center;
+        text-align: center;
+        margin-left: 80px;
+    }
+    .implement__box_1{
+        align-items: center;
+
+    }
+    .sample__box1{
+        align-items: center;
+    }
 }

@@ -54,4 +54,19 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
+    padding-top: 90px;
+}
+@media screen and (max-width:850px){
+ .finance_container{
+    flex-direction: column;
+ }
+ .start__title{
+    padding-top: 100px;
+ }
+ .start_container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+ }
+ 
 }
