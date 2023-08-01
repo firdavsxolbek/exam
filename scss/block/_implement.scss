@@ -84,7 +84,7 @@ flex-shrink: 0;
 .sample__imgs{
     display: flex;
 }
-@media screen and (max-width:1050px){
+@media screen and (max-width:768px){
     .implement_container{
         flex-direction: column;
         align-items: center;
@@ -97,6 +97,7 @@ flex-shrink: 0;
     .implement__title{
         margin-left: auto;
         margin-right: auto;
+        padding-top: 5px;
     }
     .implement__text{
         color: #6C8294;
@@ -107,6 +108,9 @@ flex-shrink: 0;
         font-weight: 400;
         line-height: 28px; /* 186.667% */
         width: 573px;
+    }
+    .sample__title{
+        margin-bottom: 20px;
     }
     .sample_container{
         flex-direction: column-reverse;
@@ -114,8 +118,7 @@ flex-shrink: 0;
         text-align: center;
     }
 }
-@media screen and (max-width:600px){
-
+@media screen and (max-width:360px){
     .implement__text{
         color: #6C8294;
         text-align: center;
@@ -124,10 +127,22 @@ flex-shrink: 0;
         font-style: normal;
         font-weight: 400;
         line-height: 28px; /* 186.667% */
-        width: 573px;
+        width: 328px;
         align-items: center;
         text-align: center;
-        margin-left: 80px;
+        padding-left: 15px;
+    }
+    .implement__title{
+        color: #36536B;
+        text-align: center;
+        font-family: DM Serif Display;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px; /* 100% */
+        letter-spacing: -0.277px;
+        width: 327px;
+        padding-top: 5px;
     }
     .implement__box_1{
         align-items: center;
@@ -135,5 +150,53 @@ flex-shrink: 0;
     }
     .sample__box1{
         align-items: center;
+    }
+    .img1{
+        padding-left: 10px;
+        width: 152px;
+        height: 290px;
+        flex-shrink: 0;
+    }
+    .img2{
+        // display: none;
+        width: 152px;
+        height: 290px;
+        flex-shrink: 0;
+    }
+    .sample__title{
+        color: #36536B;
+        text-align: center;
+        font-family: DM Serif Display;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px; /* 100% */
+        letter-spacing: -0.277px;
+        width: 327px;
+        padding-top: 10px;
+        padding-left: auto;
+        padding-right: auto;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .sample__text{
+        width: 328px;
+        color: #6C8294;
+        text-align: center;
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 186.667% */
+        padding-left: auto;
+        padding-right: auto;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 80px;
+    }
+    .sample__box1{
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 5px;
     }
 }

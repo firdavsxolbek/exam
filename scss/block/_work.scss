@@ -7,7 +7,7 @@
 .work_container{
     display: flex;
     justify-content: space-between;
-}
+ }
 .work__title{
     padding-top: 100px;
     color: #FBFCFE;
@@ -30,8 +30,63 @@
     padding-top: 24px;
     padding-bottom: 32px;
 }
-.work__logos{
+.work__logo{
+    align-items: center;
     padding-top: 190px;
+}
+.work_logo__block{
+    align-items: center;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.work_l1{
+    width: 117px;
+    height: 15px;
+    flex-shrink: 0;
+    width: 100%;
+}
+.work_l2{
+    width: 130px;
+    height: 26px;
+    flex-shrink: 0;
+}
+.work_l3{
+    width: 125px;
+    height: 22px;
+    flex-shrink: 0;
+}
+.work_l4{
+    width: 118px;
+    height: 14px;
+    flex-shrink: 0;
+}
+.work_l5{
+    width: 79px;
+    height: 27px;
+    flex-shrink: 0;
+}
+.work_l6{
+    width: 93px;
+    height: 22px;
+    flex-shrink: 0; 
+}
+.w_logo1{
+    padding-left: 60px;
+    padding-bottom: 45px;
+}
+.first_logos{
+    align-items: center;
+    display: flex;
+    padding-top: 90px;
+}
+.second_logos{
+    align-items: center;
+    display: flex;
+}
+.third_logos{
+    align-items: center;
+    display: flex;
 }
 .work__btn{
     color: #FBFCFE;
@@ -50,10 +105,55 @@
     padding: 16px 32px;
     margin-bottom: 100px;
 }
-@media screen and (max-width:1050px){
+@media screen and (max-width:920px){
     .work_container{
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
     }
+    .work__text{
+        text-align: center;
+    }
+}
+@media screen and (max-width:500px){
+    .work__title{
+        width: 327px;
+        color: #FBFCFE;
+        text-align: center;
+        font-family: DM Serif Display;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px; /* 112.5% */
+        letter-spacing: -0.246px;
+        align-items: center;
+        padding-top: 50px;
+
+    }
+    .w_logo1{
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+    .work__text{
+        color: #FBFCFE;
+        text-align: center;
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 186.667% */
+        width: 327px;
+    }
+    .work__logo{
+        display: none;
+    }
+    .work_logo__block{
+        display: block;
+        align-items: center;
+        padding-right: 30px;
+    }
+    .w_logo1-6{
+        padding-left: 70px;
+    }
+
 }

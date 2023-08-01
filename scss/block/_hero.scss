@@ -43,7 +43,8 @@
 
 .hero__img {
     max-width: 463px;
-    padding-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
     height: 700px;
     fill: #213648;
     filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.30));
@@ -58,10 +59,20 @@
     background: #FBFCFE;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
 }
-@media screen and (max-width:884px) {
+@media screen and (max-width:951px) {
     .hero_container {
         flex-direction: column-reverse;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero_picture{
+        margin-left: 280px;
+    }
+
+    .container{
+        margin-left: auto;
+        margin-right: auto;
     }
     .hero__title{
         color: #36536B;
@@ -72,7 +83,9 @@
         font-weight: 400;
         line-height: 56px; /* 116.667% */
         letter-spacing: -0.369px;
-        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 546px;
+        height: 243px;
     }
     .hero_info{
         align-items: center;
@@ -80,14 +93,44 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .hero_input__block{
+        align-items: center;
+    }
     .hero__input{
-        margin-left: 200px;
         margin-top: 20px;
+        margin-left: 200px;
+        margin-right: auto;
     }
     .hero__img{
-        padding-bottom: 10px;
+        max-width: 259px;
+        max-width: 100%;
+        height: 300px;
+        flex-shrink: 0;
+        padding-bottom: 1px;
+        margin-left: 70px;
     }
-    @media screen and (max-width:580px) {
+    @media screen and (max-width:757px) {
+        .hero_picture{
+            margin-left: 150px;
+        }
+    }
+    @media screen and (max-width:472px) {
+        .hero_picture{
+            margin-left: 50px;
+        }
+        .hero__title{
+            padding-left: 24px;
+            margin-left: 10px;
+        }
+    }
+
+    @media screen and (max-width:360px) {
+       .hero_picture{
+        margin-left: 21px;
+       }
+        .hero__input{
+        margin-left: 200px;
+       }
         .hero__title{
             color: #36536B;
             text-align: center;
@@ -98,6 +141,11 @@
             line-height: 36px; /* 112.5% */
             letter-spacing: -0.246px;
             width: 327px;
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+        .hero__input{
+            margin-left: 90px;
         }
         
     }
