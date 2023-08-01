@@ -636,8 +636,6 @@ body {
     letter-spacing: -0.277px;
     max-width: 327px;
     padding-top: 10px;
-    padding-left: auto;
-    padding-right: auto;
     margin-left: 24px;
     margin-right: 24px;
   }
@@ -650,8 +648,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 186.667% */
-    padding-left: auto;
-    padding-right: auto;
     margin-left: 24px;
     margin-right: 24px;
     margin-bottom: 80px;
